@@ -1,0 +1,109 @@
+.footer {
+  background-color: #555;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.footer-contacts {
+  list-style: none;  /* remove bullets */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 320px;  /* largura máxima centralizada */
+  display: flex;
+  flex-direction: column; /* lista vertical */
+  gap: 10px; /* espaçamento entre os itens */
+  align-items: center; /* centraliza horizontalmente */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  cursor: default;
+}
+
+.contact-item svg {
+  color: #d4a947; /* cor dourada para os ícones */
+  width: 20px;
+  height: 20px;
+}
+
+/* RESPONSIVIDADE */
+
+/* Telas até 768px */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .footer p {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .footer-contacts {
+    max-width: 100%;
+    gap: 8px;
+  }
+
+  .contact-item {
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  .contact-item svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Telas até 425px */
+@media (max-width: 425px) {
+  .footer {
+    padding: 12px 8px;
+  }
+
+  .footer p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .contact-item {
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  .contact-item svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Telas até 320px */
+@media (max-width: 320px) {
+  .footer {
+    padding: 10px 5px;
+  }
+
+  .footer p {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .contact-item {
+    font-size: 11px;
+    gap: 4px;
+  }
+
+  .contact-item svg {
+    width: 14px;
+    height: 14px;
+  }
+}
