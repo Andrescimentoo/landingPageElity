@@ -1,0 +1,66 @@
+/* Imagens header */
+.imagemHeader img {
+  width: 88px;
+  height: 60px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Imagens cards */
+.img_2 img,
+.img_3 img,
+.img_4 img,
+.img_5 img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Imagem maior */
+.img-6 img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* Responsividade das imagens */
+
+@media (max-width: 768px) {
+  .imagemHeader img {
+    width: 60px;
+    height: auto;
+  }
+
+  .img_2 img,
+  .img_3 img,
+  .img_4 img,
+  .img_5 img {
+    height: auto;
+    max-height: 200px;
+  }
+
+  .img-6 img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .imagemHeader img {
+    width: 50px;
+  }
+
+  .img_2 img,
+  .img_3 img,
+  .img_4 img,
+  .img_5 img {
+    max-height: 150px;
+  }
+
+  .img-6 img {
+    max-width: 80%;
+  }
+}
+
+
